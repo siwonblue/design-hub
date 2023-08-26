@@ -39,6 +39,8 @@ yarn -D add twin.macro
 
 root/withTwin.js for babel (swc 를 사용한다면 아래 설정이 적용안될수도 있음.)
 
+아래 설정은 babel 이 typescript, twinmacro, emotion 을 모두 커버하도록 규정한다.
+
 ```js
 const path = require("path");
 
@@ -117,6 +119,8 @@ module.exports = withTwin({
 ```
 
 ### 7.2 next.js + twin macro => stroybook 적용
+
+next.config.js 에서 typescript, twin.macro 에 대한 설정을 모두 했는데, 이에 대해 storybook 에 대한 설정을 다시 해주어야 한다.
 
 babel-loader : 바벨 로더 설치
 babel-plugin-macros : 바벨로더 트윈매크로 연결 플러그인 설치
