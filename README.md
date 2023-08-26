@@ -122,10 +122,10 @@ module.exports = withTwin({
 
 withTwin.js 과 next.config.js 에서 typescript, twin.macro 에 대한 설정을 모두 했는데, 이건 twin.macro <> next.js 간의 설정을 끝낸 것이다. storybook 까지 twin.macro 와 연결해주려면 이에 대해 storybook 에 대한 설정을 추가적으로 해주어야 한다.
 
-babel-loader : 바벨 로더 설치 <br/>
-babel-plugin-macros : 바벨로더 트윈매크로 연결 플러그인 설치 <br/>
-@emotion/babel-plugin-jsx-pragmatic : 이모션을 사용하기 위한 바벨 플러그인 설치 <br/>
-@babel/plugin-transform-react-jsx : 바벨 jsx 플러그인 <br/>
+babel-loader : 바벨 로더 설치  
+babel-plugin-macros : 바벨로더 트윈매크로 연결 플러그인 설치  
+@emotion/babel-plugin-jsx-pragmatic : 이모션을 사용하기 위한 바벨 플러그인 설치  
+@babel/plugin-transform-react-jsx : 바벨 jsx 플러그인
 
 ```bash
 yarn add -D babel-loader babel-plugin-macros @emotion/babel-plugin-jsx-pragmatic @babel/plugin-transform-react-jsx
