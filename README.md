@@ -137,6 +137,14 @@ typescript babel 설정
 yarn add -D @babel/preset-typescript
 ```
 
+next<>bebel 을 연결해주고, 바벨이 타입스크립트를 해석할 수 있도록 한다.
+
+```ts
+  ...
+   presets: ["next/babel", "@babel/preset-typescript"],
+   ...
+```
+
 .storybook/main.ts
 
 ```ts
