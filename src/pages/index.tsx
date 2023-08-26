@@ -1,7 +1,12 @@
 import type { NextPage } from "next";
+import tw from "twin.macro";
 
 const Home: NextPage = () => {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return <Test>Hello world!</Test>;
 };
+
+const Test = tw.div`
+  text-3xl font-bold underline
+`;
 
 export default Home;

@@ -1,3 +1,9 @@
+import tw from "twin.macro";
+
 export const Toc = () => {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return <Test>Hello world!</Test>;
 };
+
+const Test = tw.div`
+  text-3xl font-bold underline
+`;
