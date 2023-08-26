@@ -120,7 +120,7 @@ module.exports = withTwin({
 
 ### 7.2 next.js + twin macro => stroybook 적용
 
-next.config.js 에서 typescript, twin.macro 에 대한 설정을 모두 했는데, 이에 대해 storybook 에 대한 설정을 다시 해주어야 한다.
+withTwin.js 과 next.config.js 에서 typescript, twin.macro 에 대한 설정을 모두 했는데, 이건 twin.macro <> next.js 간의 설정을 끝낸 것이다. storybook 까지 twin.macro 와 연결해주려면 이에 대해 storybook 에 대한 설정을 다시 해주어야 한다.
 
 babel-loader : 바벨 로더 설치
 babel-plugin-macros : 바벨로더 트윈매크로 연결 플러그인 설치
