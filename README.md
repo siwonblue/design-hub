@@ -37,7 +37,7 @@ twin.macro 설치
 yarn -D add twin.macro
 ```
 
-루트에 withTwin.js 만들고 아래 복사 (webpack, babel 에 대한 설정) 아마 next.js 가 swc 를 사용하고 있다면 해당 옵션은 적용되지 않을 수도..?
+root/withTwin.js for babel (swc 를 사용한다면 아래 설정이 적용안될수도 있음.)
 
 ```js
 const path = require("path");
