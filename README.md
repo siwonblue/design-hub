@@ -8,7 +8,7 @@ const stringWidth = require('string-width');
 ..
 ```
 
----
+# setting
 
 1. [install nextjs] create-next-app --typescript 로 next + typescript 프로젝트 init
 2. [install storybook with nextjs] docs https://storybook.js.org/recipes/next
@@ -23,7 +23,7 @@ const stringWidth = require('string-width');
    (emotion(ts) 를 이용한 방법.) docs https://github.com/ben-rogerson/twin.examples/tree/master/next-emotion-typescript
    docs 에 나와있는 예제를 다운받아서 해당 프로젝트를 분석해서 찾은 방법
 
-7.1 next.js + twin macro 설치
+### 7.1 next.js + twin macro 설치
 
 twin.macro 와 emtion 을 함께 사용하기 위해서 emotion<>react, emotino<>styled-component 설치
 
@@ -116,7 +116,7 @@ module.exports = withTwin({
 });
 ```
 
-7.2 next.js + twin macro => stroybook 적용
+### 7.2 next.js + twin macro => stroybook 적용
 
 babel-loader : 바벨 로더 설치
 babel-plugin-macros : 바벨로더 트윈매크로 연결 플러그인 설치
@@ -132,6 +132,8 @@ typescript babel 설정
 ```bash
 yarn add -D @babel/preset-typescript
 ```
+
+.storybook/main.ts
 
 ```ts
 import type { StorybookConfig } from "@storybook/nextjs";
