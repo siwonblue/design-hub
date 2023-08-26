@@ -1,11 +1,11 @@
 @storybook/cli v7.3.2
 
-info => Cleaning outputDir: /var/folders/m9/1bbpr2fn7qb4pxp_ccnnmrw40000gn/T/chromatic--53122-UGX2qwDB4PI7
+info => Cleaning outputDir: /var/folders/m9/1bbpr2fn7qb4pxp_ccnnmrw40000gn/T/chromatic--55307-712aDdD6pARl
 info => Loading presets
 info => Building manager..
-info => Manager built (123 ms)
+info => Manager built (120 ms)
 info => Compiling preview..
-info => Copying static files: /Users/jeonsiwon/Desktop/design-hub/node_modules/@storybook/manager/static at /var/folders/m9/1bbpr2fn7qb4pxp_ccnnmrw40000gn/T/chromatic--53122-UGX2qwDB4PI7/sb-common-assets
+info => Copying static files: /Users/jeonsiwon/Desktop/design-hub/node_modules/@storybook/manager/static at /var/folders/m9/1bbpr2fn7qb4pxp_ccnnmrw40000gn/T/chromatic--55307-712aDdD6pARl/sb-common-assets
 WARN You (or an addon) are using the 'config' preset field. This has been replaced by 'previewAnnotations' and will be removed in 8.0
 info Addon-docs: using MDX2
 info => Using implicit CSS loaders
@@ -118,14 +118,14 @@ info => Using default Webpack5 setup
 <s> [webpack.Progress] 20% building import loader ./node_modules/@storybook/mdx2-csf/loader.js
 <s> [webpack.Progress] 20% building 0/1 entries 51/80 dependencies 8/42 modules
 <s> [webpack.Progress] 18% building import loader ./node_modules/unplugin/dist/webpack/loaders/load.js
-<s> [webpack.Progress] 18% building 0/1 entries 73/99 dependencies 8/55 modules
+<s> [webpack.Progress] 18% building 0/1 entries 67/99 dependencies 8/53 modules
 <s> [webpack.Progress] 16% building import loader ./node_modules/@storybook/nextjs/dist/next-image-loader-stub.js
 <s> [webpack.Progress] 16% building 0/1 entries 91/99 dependencies 8/73 modules
 <s> [webpack.Progress] 23% building import loader ./node_modules/style-loader/dist/cjs.js
 <s> [webpack.Progress] 23% building import loader ./node_modules/css-loader/dist/cjs.js
 <s> [webpack.Progress] 23% building import loader ./node_modules/postcss-loader/dist/cjs.js
-<s> [webpack.Progress] 23% building 0/1 entries 129/131 dependencies 25/101 modules
-<s> [webpack.Progress] 28% building 0/1 entries 700/825 dependencies 98/290 modules
+<s> [webpack.Progress] 23% building 0/1 entries 127/131 dependencies 25/99 modules
+<s> [webpack.Progress] 27% building 0/1 entries 796/813 dependencies 94/300 modules
 <s> [webpack.Progress] 65% building 1/1 entries 2270/2270 dependencies 869/869 modules
 <s> [webpack.Progress] 65% building
 <s> [webpack.Progress] 69% building finish
@@ -384,7 +384,7 @@ info => Using default Webpack5 setup
 <s> [webpack.Progress] 99% cache begin idle
 <s> [webpack.Progress] 100% 
 
-info => Preview built (8.6 s)
+info => Preview built (8.41 s)
 WARN Critical dependency: require function is used in a way in which dependencies cannot be statically extracted
 WARN Critical dependency: require function is used in a way in which dependencies cannot be statically extracted
 WARN asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
@@ -406,4 +406,4 @@ WARN
 <s> [webpack.Progress] 99% cache shutdown
 <s> [webpack.Progress] 100% 
 
-info => Output directory: /var/folders/m9/1bbpr2fn7qb4pxp_ccnnmrw40000gn/T/chromatic--53122-UGX2qwDB4PI7
+info => Output directory: /var/folders/m9/1bbpr2fn7qb4pxp_ccnnmrw40000gn/T/chromatic--55307-712aDdD6pARl
