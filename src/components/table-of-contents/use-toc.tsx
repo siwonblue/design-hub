@@ -13,7 +13,8 @@ export default function useToc() {
     const IOList: IntersectionObserver[] = [];
     let IO: IntersectionObserver;
     const copyOfNodeList = result;
-    copyOfNodeList.forEach((node) => {
+    console.log("??", copyOfNodeList);
+    copyOfNodeList?.forEach((node) => {
       const index = node.textContent as string;
       const tagName = node.tagName as string;
       setIndexList((prev) => {

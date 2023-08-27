@@ -127,6 +127,8 @@ babel-plugin-macros : 바벨로더 트윈매크로 연결 플러그인 설치
 @emotion/babel-plugin-jsx-pragmatic : 이모션을 사용하기 위한 바벨 플러그인 설치  
 @babel/plugin-transform-react-jsx : 바벨 jsx 플러그인
 
+for emotion
+
 ```bash
 yarn add -D babel-loader babel-plugin-macros @emotion/babel-plugin-jsx-pragmatic @babel/plugin-transform-react-jsx
 ```
@@ -193,4 +195,44 @@ const config: StorybookConfig = {
   }),
 };
 export default config;
+```
+
+### 7.3 styled-components 추가
+
+for styled-components
+
+```bash
+yarn add styled-components
+yarn add -D @babel/plugin-syntax-typescript babel-plugin-styled-components
+```
+
+### 8. To avoid the ugly Flash Of Unstyled Content (FOUC), add the following in lib/registry.js:
+
+docs https://nextjs.org/docs/app/building-your-application/styling/css-in-js#styled-components  
+root/lib/registry.tsx 만들고 아래 복붙
+
+```
+'use client'
+
+import React, { useState } from 'react'
+import { useServerInsertedHTML } from 'next/navigation'
+import { StyleRegistry, createStyleRegistry } from 'styled-jsx'
+
+export default function StyledJsxRegistry({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  // Only create stylesheet once with lazy initial state
+  // x-ref: https://reactjs.org/docs/hooks-reference.html#lazy-initial-state
+  const [jsxStyleRegistry] = useState(() => createStyleRegistry())
+
+  useServerInsertedHTML(() => {
+    const styles = jsxStyleRegistry.styles()
+    jsxStyleRegistry.flush()
+    return <>{styles}</>
+  })
+
+  return <StyleRegistry registry={jsxStyleRegistry}>{children}</StyleRegistry>
+}
 ```

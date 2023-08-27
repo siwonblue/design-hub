@@ -1,8 +1,13 @@
 import type { NextPage } from "next";
 import tw from "twin.macro";
+import { Quill } from "~/components/editors/quill";
 
 const Home: NextPage = () => {
-  return <Test>Hello world!</Test>;
+  return (
+    <div>
+      <Quill />
+    </div>
+  );
 };
 
 const Test = tw.div`
